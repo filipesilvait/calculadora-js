@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora JS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Simples</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div id="calculadora">
-        <input type="text" id="resultado" readonly>
-        <button onclick="insert('1')">1</button>
-        <button onclick="insert('2')">2</button>
-        <button onclick="insert('3')">3</button>
-        <button onclick="insert('4')">4</button>
-        <button onclick="insert('5')">5</button>
-        <button onclick="insert('6')">6</button>
-        <button onclick="insert('7')">7</button>
-        <button onclick="insert('8')">8</button>
-        <button onclick="insert('9')">9</button>
-        <button onclick="insert('0')">0</button>
-        <button onclick="insert('+')">+</button>
-        <button onclick="insert('-')">-</button>
-        <button onclick="insert('*')">x</button>
-        <button onclick="insert('/')">/</button>
-        <button onclick="clean()">C</button>
-        <button onclick="back()">&larr;</button>
-        <button onclick="calcular()">=</button>
+  <div class="calculator">
+    <div class="calculator__display">0</div>
+    <div class="calculator__keys">
+      <button class="key--operator" data-action="add">+</button>
+      <button class="key--operator" data-action="subtract">-</button>
+      <button class="key--operator" data-action="multiply">&times;</button>
+      <button class="key--operator" data-action="divide">÷</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>0</button>
+      <button data-action="decimal">.</button>
+      <button data-action="clear">AC</button>
+      <button class="key--equal" data-action="calculate">=</button>
     </div>
-    <script src="calculadora.js"></script>
+
+   
+  </div>
+
+  <a href="mailto:gabrieldasilvam04@gmail.com?subject=teste"><ion-icon name="mail-outline"></ion-icon></a>
+  <script src="calculadora.js"></script>
 </body>
 </html>
